@@ -1,12 +1,13 @@
 <?php
+
 namespace models;
 
 /**
  * Pedido
  */
-class Pedido{
+class Pedido {
     public $fecha;
-    public $estado; //falta definir el dominio
+    public $estado; //Pendiente, Pagado, Procesando, Enviado, Entregado
 
     /**
      * __construct
@@ -17,26 +18,28 @@ class Pedido{
      * @return void
      */
 
-     public function __construct($fecha, $estado){
-         $this->fecha=$fecha;
-         $this->estado=$estado;
-     }
+    public function __construct($fecha, $estado) {
+        $this->fecha = $fecha;
+        $this->estado = $estado;
+    }
 
-     public function getFecha(){
-         return $this->fecha;
-     }
-     public function getEstado(){
-         return $this->estado;
-     }
+    public function getFecha() {
+        return $this->fecha;
+    }
 
-     public function calcularTotal(){
-         //desarrollar logica de funcion
-     }
-     public function mostrar(){
-         return json_encode(array(
-             'fecha' => $this->fecha,
-             'estado' => $this->estado,
-             'total' => $this->calcularTotal()
-         ), JSON_PRETTY_PRINT);
-     }
+    public function getEstado() {
+        return $this->estado;
+    }
+
+    public function calcularTotal() {
+        //pensar
+    }
+
+    public function mostrar() {
+        return json_encode(array(
+            'fecha' => $this->fecha,
+            'estado' => $this->estado,
+            'total' => $this->calcularTotal()
+        ), JSON_PRETTY_PRINT);
+    }
 }

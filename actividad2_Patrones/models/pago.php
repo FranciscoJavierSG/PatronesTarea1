@@ -1,12 +1,13 @@
 <?php
+
 namespace models;
 
 /**
  * Pago
  */
-class Pago{
+class Pago {
     public $importe;
-    
+
 
     /**
      * __construct
@@ -17,13 +18,11 @@ class Pago{
      * @return void
      */
 
-     public function __construct($importe){
-         $this->importe=$importe;
-         
-     }
+    public function __construct($importe) {
+        $this->importe = $importe;
+    }
 
-     public function getImporte(){
-         return $this->importe;
-     }
-     
+    public function getImporte() {
+        return $this->importe;
+    }
 }
