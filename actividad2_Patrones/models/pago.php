@@ -5,7 +5,7 @@ namespace models;
 /**
  * Pago
  */
-class Pago {
+abstract class Pago {
     public $importe;
 
 
