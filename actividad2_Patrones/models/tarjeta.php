@@ -11,9 +11,9 @@ use models\pago;
  */
 
 class tarjeta extends pago {
-    private $numero;
-    private $caducidad;
-    private $tipo;
+    public $numero;
+    public $caducidad;
+    public $tipo;
 
     /**
      * __construct
