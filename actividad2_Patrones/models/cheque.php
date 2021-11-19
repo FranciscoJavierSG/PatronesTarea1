@@ -11,8 +11,8 @@ use models\pago;
  */
 
 class cheque extends pago {
-    private $nombre;
-    private $banco;
+    public $nombre;
+    public $banco;
 
     /**
      * __construct

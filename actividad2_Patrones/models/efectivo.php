@@ -11,7 +11,7 @@ use models\pago;
  */
 
 class efectivo extends pago {
-    private $tipoMoneda;
+    public $tipoMoneda;
 
     /**
      * __construct

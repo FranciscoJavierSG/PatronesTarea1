@@ -6,7 +6,7 @@ namespace models;
  * Cliente
  */
 
-abstract class Cliente {
+class Cliente {
     public $nombre;
     public $direccion;
 
